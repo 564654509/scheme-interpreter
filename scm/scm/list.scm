@@ -112,6 +112,11 @@
   
 (define list (lambda x x))
 
+(define (list-tail x n)
+  (cond ((zero? n) x)
+        ((null? x) (wrong "list-tail: index out of range"))
+        (else (list-tail (cdr x) (- n 1)))))
+        
 (define (list-ref l* k*)
   (if (not (pair? l*))
       (begin (display "procedure: list-ref")
