@@ -1,0 +1,25 @@
+
+How to use:
+
+	1. First you should install the Boehm-Demers-Weiser gc. http://hboehm.info/gc/
+
+	2. type make.
+
+	3. type ./interp
+
+	4. type (load "init.scm")
+
+	5. If you want to test, type (load "test.scm")
+	
+
+Todo:
+
+	1. No support for big number, float number, complex number and fraction.
+	
+	2. Only a limited call/cc functionality.
+	
+	3. I use the gc library to reclaim useless memory.
+	
+Bugs and problems are welcome. email:sxf999@mail.ustc.edu.cn
+
+

@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+	long long n;
+	scanf("%lld", &n);
+	printf("%lld\n", atoq("11111111111111"));
+	printf("%lld", n);
+	return 0;
+}

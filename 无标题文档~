@@ -1,0 +1,12 @@
+(define-syntax begin3
+(syntax-rules ()
+((begin3 exp ...)
+((lambda () exp ...)))))
+
+(define-syntax begin2
+(syntax-rules ()
+((begin2 exp)
+exp)
+((begin exp1 exp2 ...)
+(let ((x exp1))
+(begin2 exp2 ...)))))
