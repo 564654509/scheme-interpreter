@@ -32,8 +32,6 @@ extern scm_obj *scm_alloc_obj(void);
 
 /*  allocate a size byte space for string  */
 extern char *scm_alloc_str(unsigned int size);
-
-/*  allocate space for vector  */
 extern scm_obj **scm_alloc_vec(unsigned int size);
 
 #endif

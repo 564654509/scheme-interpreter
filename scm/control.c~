@@ -23,7 +23,6 @@
 
 #include "header.h"
 
-/*  procedure: (apply proc arg1 arg2 ... args)  */
 scm_obj *ctrl_apply(const scm_obj *obj)
 {
 	scm_obj *env;
